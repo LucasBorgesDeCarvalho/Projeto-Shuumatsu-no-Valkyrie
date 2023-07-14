@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Shuumatsu no Valkyrie</title>
+
+    <link rel="shortcut icon" href="./src/imagens/img-Logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/logo.png" alt="Logo x-men">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem selecionado" id="adao" data-name="Adão" data-description="Adão foi o primeiro Homem, o homem criado por Deus à sua imagem e semelhança. A este foi atribuído autoridade para governar sobre todas as demais criações.">
+            <img
+              src="./src/imagens/adao.jpg"
+              alt="Personagem Adão"
+            />
+          </li>
+          <li class="personagem" id="zeus" data-name="Zeus" data-description="Zeus era uma importante divindade da mitologia grega, considerado pelos gregos antigos o deus supremo do Universo. Era detentor do raio e era o deus dos céus, do raio e do trovão. Lutou contra o próprio pai, Cronos. A devoção dos gregos a Zeus motivou a construção de templo e estátuas em sua homenagem.">
+            <img
+              src="./src/imagens/zeus.jpg"
+              alt="Personagem Zeus"
+            />
+          </li>
+
+          <li class="personagem" id="jack" data-name="Jack o Estripador" data-description="Jack, o Estripador (em inglês: Jack the Ripper) é o pseudônimo mais conhecido para designar um famoso assassino em série não identificado que atuou na periferia de Whitechapel, distrito de Londres, e arredores em 1888. O nome Jack, o Estripador se originou de uma carta (Dear Boss) escrita por alguém que alegava ser o assassino e a qual foi amplamente divulgada pela imprensa da época">
+            <img
+              src="./src/imagens/Jack.jpg"
+              alt="Personagem Jack o Estripador"
+            />
+          </li>
+
+          <li class="personagem" id="hades" data-name="Hades" data-description="Hades foi um importante deus da mitologia grega, o conjunto de histórias pertencente à religiosidade dos gregos antigos. Era o deus do submundo e, como tal, seu papel era impedir que os vivos entrassem nesse local e que os mortos saíssem dele. Para isso, contava com a ajuda de seu cão de três cabeças, Cérbero">
+            <img
+              src="./src/imagens/hades.jpg"
+              alt="Personagem Hades"
+            />
+          </li>
+
+          <li class="personagem" id="sasaki" data-name="Kogiro Sasaki" data-description="Sasaki Kojirō também conhecido como Ganryū Kojirō nome que adotou como um nome de guerra (Ganryū - 巌流 ), e era o mesmo nome da escola de kenjutsu que ele havia fundado. É dito que Kojirō foi um dos mais famosos e habilidosos espadachins de sua época e que estudara o estilo de espada Chūjō-ryu através de seu mestre Kanemaki Jisai ou Toda Seigen.">
+            <img
+              src="./src/imagens/sasaki.jpg"
+              alt="Personagem Kogiro Sasaki"
+            />
+          </li>
+
+          <li class="personagem" id="raiden" data-name="Raiden" data-description="Raiden, um jovem de origem rural, destacou-se no sumô devido ao seu físico extraordinário e talento. Ele treinou e competiu com sucesso, alcançando a posição de ōzeki e conquistando várias vitórias impressionantes. Sua carreira foi marcada por uma série de vitórias consecutivas e um registro histórico de 254 vitórias e apenas dez derrotas. No entanto, seus títulos não são oficialmente reconhecidos pela Associação de Sumô do Japão.">
+            <img
+              src="./src/imagens/raiden.jpg"
+              alt="Personagem Raiden"
+            />
+          </li>
+
+          <li class="personagem" id="tesla" data-name="Nikola Tesla" data-description="Nikola Tesla (1856-1943) foi um inventor, engenheiro eletrotécnico e mecânico sérvio. Ele é conhecido por suas contribuições ao sistema de fornecimento de eletricidade em corrente alternada (CA). Tesla emigrou para os EUA, onde desenvolveu várias invenções e patentes importantes, como o motor de indução de corrente alternada. Ele também explorou ideias de iluminação e distribuição de energia sem fio. Após sua morte, seu trabalho foi redescoberto e seu nome foi dado à unidade SI de densidade de fluxo magnético, o tesla.">
+            <img
+              src="./src/imagens/tesla.jpg"
+              alt="Personagem Nikola Tesla"
+            />
+          </li>
+
+          <li class="personagem" id="thor" data-name="Thor" data-description="Thor é um deus da mitologia nórdica, filho de Odin, conhecido por sua força, coragem e pelo martelo mágico Mjölnir. Ele é o protetor dos deuses e dos seres humanos, enfrentando gigantes e outras ameaças. ">
+            <img
+              src="./src/imagens/thor.jpg"
+              alt="Personagem Thor"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/adao.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Adão</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Adão foi o primeiro Homem, o homem criado por Deus à sua imagem e semelhança. A este foi atribuído autoridade para governar sobre todas as demais criações.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
